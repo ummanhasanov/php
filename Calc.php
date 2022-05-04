@@ -30,8 +30,6 @@ class Calc
             return false;
         }
     }
-    
-    
 
 }
 
