@@ -10,7 +10,7 @@ class True100 {
         }return 0;
     }
 
-    public function Arange20_30($a, $b) {
+    public function arange20_30($a, $b) {
         if ($a <= 30 && $a >= 20 || $b <= 30 && $b >= 20) {
             return true;
         }
@@ -24,21 +24,29 @@ class True100 {
         return false;
     }
 
-    public function Array5and6($arr) {
-        $array = 0;
+    public function arrayTwo5and6($arr) {
+        $count = 0;
         for ($i = 0; $i < sizeof($arr) - 1; $i++) {
-            if (($arr[$i] == 5) && ($arr[$i + 1] == 5) || ($arr[$i + 1] == 6)) {
-                $array++;
+            if ($arr[$i] == 5 && $arr[$i + 1] == 5 || $arr[$i + 1] == 6) {
+                $count++;
             }
         }
-        return $array;
+        return $count;
     }
-
+  public function check123($arr) {
+       
+        for ($i = 0; $i < sizeof($arr) - 1; $i++) {
+            if ($arr[$i] == 1 && $arr[$i + 1] == 2 && $arr[$i + 2] == 3) {
+                return true;
+            }
+        }
+        return false;
+    }
 }
 
 $check = new True100();
 //echo $check->trueFor100(6, 6);
-//echo $check->Arange20_30(2, 18);
+//echo $check->arange20_30(2, 18);
 //echo $check->lastNumEqual(246, 236);
-echo $check->Array5and6([21, 333, 5, 6, 55]);
-
+//echo $check->arrayTwo5and6([6, 16, 15, 5,5]);
+//var_dump ($check->check123($arr=[1, 1, 2, 31, 2]));
