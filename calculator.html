@@ -37,6 +37,14 @@
                 c = a / b;
                 document.getElementById("answer").value = c;
             }
+
+            function pre() {
+                var a, b, c;
+                a = Number(document.getElementById("first").value);
+                b = Number(document.getElementById("second").value);
+                c = a * b / 100;
+                document.getElementById("answer").value = c;
+            }
         </script>
 
     <body>
@@ -51,6 +59,8 @@
             <button style= "background: navajowhite;" onclick="sub()">-</button>
             <button style= "background: navajowhite;" onclick="mult()">*</button>
             <button style= "background: navajowhite;" onclick="div()">/</button>
+            <button style= "background: navajowhite;" onclick="pre()">%</button>
+
         </p>
         <p>Calculate
             <input style="text-align: center;background-color: aquamarine; " id="answer">
