@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Calculator</title>
+        <script>
+            function add() {
+                var a, b, c;
+                a = Number(document.getElementById("first").value);
+                b = Number(document.getElementById("second").value);
+                c = a + b;
+                document.getElementById("answer").value = c;
+            }
+
+            function sub() {
+                var a, b, c;
+                a = Number(document.getElementById("first").value);
+                b = Number(document.getElementById("second").value);
+                c = a - b;
+                document.getElementById("answer").value = c;
+            }
+
+            function mult() {
+                var a, b, c;
+                a = Number(document.getElementById("first").value);
+                b = Number(document.getElementById("second").value);
+                c = a * b;
+                document.getElementById("answer").value = c;
+            }
+
+            function div() {
+                var a, b, c;
+                a = Number(document.getElementById("first").value);
+                b = Number(document.getElementById("second").value);
+                c = a / b;
+                document.getElementById("answer").value = c;
+            }
+        </script>
+
+    <body>
+        <p>number 1   
+            <input style="text-align: center; background-color: antiquewhite;" id="first">
+        </p>
+        <p>number 2
+            <input style="text-align: center; background-color: antiquewhite;" id="second">
+        </p>
+        <p> Operators
+            <button style= "background: navajowhite;" onclick="add()">+</button>
+            <button style= "background: navajowhite;" onclick="sub()">-</button>
+            <button style= "background: navajowhite;" onclick="mult()">*</button>
+            <button style= "background: navajowhite;" onclick="div()">/</button>
+        </p>
+        <p>Calculate
+            <input style="text-align: center;background-color: aquamarine; " id="answer">
+        </p>
+    </head>
+</body>
+</html>
