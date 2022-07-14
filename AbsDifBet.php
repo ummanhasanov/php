@@ -7,7 +7,7 @@ class AbsDifBet {
         if ($n < $a) {
             return $f;
         } else {
-            return $f*3;
+            return abs($f*5);
         }
     }
 
